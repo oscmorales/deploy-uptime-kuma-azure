@@ -16,6 +16,7 @@ resource appService 'Microsoft.Web/sites@2020-06-01' = {
     serverFarmId: appServicePlanId
     siteConfig: {
       linuxFxVersion: linuxFxVersion
+      webSocketsEnabled: true
       appSettings: [
         {
           name: 'DOCKER_REGISTRY_SERVER_URL'
